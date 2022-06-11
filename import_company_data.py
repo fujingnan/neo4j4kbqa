@@ -3,7 +3,8 @@ from tqdm import tqdm
 import pandas as pd
 import numpy as np
 
-graph = Graph("http://127.0.0.1:7474", auth=("neo4j", "qwer"))
+# graph = Graph("http://127.0.0.1:7474", auth=("neo4j", "qwer"))
+graph = Graph("bolt://localhost:11005", auth=("fujingnan", "123"))
 
 
 def import_company():
